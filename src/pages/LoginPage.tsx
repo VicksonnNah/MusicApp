@@ -29,6 +29,12 @@ export function LoginPage() {
         </h1>
         <p className="text-[#a0a0a0] text-center mb-8">Sign in to your account</p>
 
+        <div className="mb-6 rounded-lg border border-[#282828] bg-[#121212] p-4">
+          <h2 className="mb-2 text-sm font-semibold text-white">Test account</h2>
+          <p className="text-sm text-[#a0a0a0]">Email: <span className="text-white">123@gmail.com</span></p>
+          <p className="text-sm text-[#a0a0a0]">Password: <span className="text-white">123456!</span></p>
+        </div>
+
         <form onSubmit={handleSubmit} className="space-y-4">
           {error && <p className="text-red-400 text-sm text-center">{error}</p>}
           <div>
